@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>밸런스 게임</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="wrapper">
+        <div class="tag">밸런스 게임</div>
+
+        <section class="question-box">
+            <div class="title">하나만 고른다면?</div>
+
+            <div class="option-row">
+                <div class="option" id="optA">A</div>
+                <div class="vs">VS</div>
+                <div class="option" id="optB">B</div>
+            </div>
+        </section>
+
+        <section class="footer-area">
+            <div class="buttons">
+                <button id="nextBtn" type="button">다른 문제!</button>
+                <button id="shareBtn" type="button" class="secondary-btn">공유하기</button>
+            </div>
+            <div class="count-text" id="progressInfo">
+                0 / 0
+            </div>
+            <div class="toast" id="toast">복사됐어요 ✅</div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
