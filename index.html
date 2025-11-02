@@ -10,10 +10,16 @@
 </head>
 
 <body>
-    <main class="wrapper">
+    <div class="page">
         <div class="tag">밸런스 게임</div>
 
-        <section class="question-box">
+        <main class="wrapper">
+            <div class="filter-row">
+                <label class="filter-label" for="categorySelect">어떤 상황?</label>
+                <select id="categorySelect" class="filter-select"></select>
+            </div>
+
+            <section class="question-box">
             <div class="title">하나만 고른다면?</div>
 
             <div class="option-row">
@@ -23,17 +29,15 @@
             </div>
         </section>
 
-        <section class="footer-area">
-            <div class="buttons">
-                <button id="nextBtn" type="button">다른 문제!</button>
-                <button id="shareBtn" type="button" class="secondary-btn">공유하기</button>
-            </div>
-            <div class="count-text" id="progressInfo">
-                0 / 0
-            </div>
-            <div class="toast" id="toast">복사됐어요 ✅</div>
-        </section>
-    </main>
+            <section class="footer-area">
+                <div class="buttons">
+                    <button id="nextBtn" type="button">다른 문제!</button>
+                    <button id="shareBtn" type="button" class="secondary-btn">공유하기</button>
+                </div>
+                <div class="toast" id="toast">복사됐어요 ✅</div>
+            </section>
+        </main>
+    </div>
 
     <script src="index.js"></script>
 </body>
